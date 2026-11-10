@@ -41,13 +41,13 @@
     margin: 12px auto;
     background: #fff;
     display: grid;
-    grid-template-columns: 1fr 68mm;
+    grid-template-columns: 1fr 80mm;
     overflow: hidden;
     box-shadow: 0 2px 14px rgba(0, 0, 0, .18);
   }
 
-  .main { padding: 15mm 11mm 12mm 15mm; }
-  .side { background: var(--panel); padding: 15mm 10mm 12mm 9mm; }
+  .main { padding: 15mm 10mm 12mm 15mm; }
+  .side { background: var(--panel); padding: 15mm 9mm 10mm 8mm; }
 
   /* ---------- Cabecera ---------- */
   h1 {
@@ -71,13 +71,13 @@
     border-bottom: 1.5px solid var(--accent);
   }
 
-  .main section { margin-top: 9mm; }
-  .side section + section { margin-top: 6.5mm; }
+  .main section { margin-top: 11mm; }
+  .side section + section { margin-top: 5.5mm; }
 
   /* ---------- Experiencia (cronología) ---------- */
   .timeline { list-style: none; border-left: 1.5px solid var(--accent-soft); margin-left: 1.2mm; }
 
-  .job { position: relative; padding: 0 0 5.4mm 5mm; }
+  .job { position: relative; padding: 0 0 7mm 5mm; }
   .job:last-child { padding-bottom: 0; }
   .job::before {
     content: "";
@@ -127,7 +127,7 @@
     border-radius: 2mm;
     overflow: hidden;
     background: #cfdae1;
-    margin-bottom: 7mm;
+    margin-bottom: 6mm;
   }
   .photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
   .photo.empty img { display: none; }
@@ -163,6 +163,10 @@
   .certs li:first-child { padding-top: 0; }
   .certs li:last-child { border-bottom: 0; padding-bottom: 0; }
   .certs .meta { display: block; font-size: 8pt; color: var(--muted); }
+
+  .courses li { font-size: 8.4pt; padding: 1.1mm 0; }
+  .courses li:last-child { border-bottom: 1px solid var(--rule); padding-bottom: 1.1mm; }
+  .first-study { margin-top: 3.2mm; }
 
   .certs-grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 7mm; }
   .certs-grid li { border-bottom: 1px solid var(--rule); padding: 1.6mm 0; }
@@ -277,19 +281,9 @@
 
     <section aria-labelledby="certificados">
       <h2 id="certificados">Certificados de profesionalidad</h2>
-      <ul class="certs certs-grid">
+      <ul class="certs">
         <li>Actividades auxiliares de almacén
-          <span class="meta">Prácticas laborales en “Grupo Siete”, polígono de la Cova</span></li>
-        <li>Prácticas laborales en Dialprit
-          <span class="meta">80 h, 2025</span></li>
-        <li>Cajero y reponedor de supermercado
-          <span class="meta">80 h, 2025</span></li>
-        <li>Reponedor de supermercado
-          <span class="meta">AESCO, 20 h, 2025</span></li>
-        <li>Cajero de supermercado
-          <span class="meta">AESCO, 20 h, 2025</span></li>
-        <li>Manipulador de alimentos de supermercado
-          <span class="meta">AESCO, 4 h, 2025</span></li>
+          <span class="meta">Prácticas laborales en la empresa “Grupo Siete”, en el polígono de la Cova</span></li>
       </ul>
     </section>
   </main>
@@ -314,7 +308,25 @@
     <section aria-labelledby="formacion">
       <h2 id="formacion">Formación</h2>
 
-      <div class="study">
+      <ul class="certs courses">
+        <li>Prácticas laborales en Dialprit
+          <span class="meta">80 h, 2025</span></li>
+        <li>Cajero y reponedor de supermercado
+          <span class="meta">80 h, 2025</span></li>
+        <li>Carnet de operador de carretillas elevadoras
+          <span class="meta">FADECOM, 8 h, 2025</span></li>
+        <li>Carnet de manipulación de alimentos y control de alérgenos
+          <span class="meta">FADECOM, 4 h, 2025</span></li>
+        <li>Reponedor de supermercado
+          <span class="meta">AESCO, 20 h, 2025</span></li>
+        <li>Cajero de supermercado
+          <span class="meta">AESCO, 20 h, 2025</span></li>
+        <li>Manipulador de alimentos de supermercado
+          <span class="meta">AESCO, 4 h, 2025</span></li>
+        <li>Permiso de conducción B</li>
+      </ul>
+
+      <div class="study first-study">
         <h3>Grado Técnico Medio en Servicios Gastronómicos</h3>
         <ul>
           <li>Estudio del mercado</li>
@@ -333,17 +345,6 @@
         <h3>Grado Técnico Medio Planificación Industrial del Proceso</h3>
         <p>Sector Metal-Piezas y Repuestos para la industria ligera. La Habana, Cuba.</p>
       </div>
-    </section>
-
-    <section aria-labelledby="carnes">
-      <h2 id="carnes">Carnés y permisos</h2>
-      <ul class="certs">
-        <li>Permiso de conducción B</li>
-        <li>Carnet de operador de carretillas elevadoras
-          <span class="meta">FADECOM, 8 h, 2025</span></li>
-        <li>Carnet de manipulación de alimentos y control de alérgenos
-          <span class="meta">FADECOM, 4 h, 2025</span></li>
-      </ul>
     </section>
 
   </aside>
